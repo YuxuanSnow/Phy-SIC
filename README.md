@@ -19,12 +19,7 @@ TL;DR: Human-Scene Interaction and Contact from a Single Image with Physical Pla
 </div>
 <br>
 
-<div align="center">
-    <video width="640" controls>
-        <source src="https://yuxuan-xue.com/physic/static/videos/PhySICs_1360_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+https://github.com/user-attachments/assets/86105b9b-ff49-41de-8fd8-dbf25e3e0b26
 
 ## Getting Started
 
