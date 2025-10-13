@@ -45,10 +45,16 @@ To run the code, please copy images to the `images/` directory. Then, execute th
 python run_optimizer.py
 ```
 This will save the results in the `outputs/` directory.
+ 
+## Roadmap
 
+We maintain a short list of upcoming items and the current release status for key pieces of the project:
+
+- [x] **Demo code release**
+- [ ] **Evaluation code**
 
 ## Acknowledgements
-This code is built on top of many open-source projects. We would like to thank the authors of the following repositories:
+This code is built on top of many great open-source projects. We would like to thank the authors of the following repositories:
 - [OmniEraser](https://github.com/PRIS-CV/Omnieraser) for the image inpainting code.
 - [MoGe](https://github.com/microsoft/MoGe) for affine-invariant depth estimation.
 - [CameraHMR](https://github.com/pixelite1201/CameraHMR/) for the initial human mesh estimation.
