@@ -1,0 +1,84 @@
+# run settings
+run_name: wild_results
+start_stage: inpaint
+init_from: test1_moge_points_fov
+dataset: prox
+
+hydra:
+  run:
+    dir: outputs/quantitative_${run_name}
+
+db_path: data_lmdb
+file_list: "tmp/prox_images.txt"
+start_idx: 0
+end_idx: -1
+batch_size: 0  # will be set by the job manager
+quantitative: true
+
+# general
+single_human: false
+body_model: SMPLX
+debug: true
+
+max_img_size: 1024
+flip_image: false
+sample_multiple_inpaints: true
+inpaint_model: omni
+skip_existing: false
+
+# keypoints related
+keypoint_threshold: 0.5
+only_body_joints: false
+
+# 3D pose related
+smpl_model: "chmr"
+
+# contact related
+contact: deco
+
+# depth related
+f_px: moge
+compute_floor_points: true
+
+# mesh related
+self_occlusion_threshold: 0.7
+ray_casting: true
+
+# optimization related
+max_distance_interpenetration: 0.15
+max_distance_contact: 0.15
+
+opt_1:
+  n_iter: 30
+  optimizer: adam
+  train_params:
+    - cam_trans
+  loss_weights:
+    contact_loss: 0
+    interpenetration_loss: 0
+    human_depth_loss: 0
+    reg_loss: 0
+    proj_loss: 1
+
+opt_2: 
+  n_iter: 2
+  optimizer: lbfgs
+  train_params:
+    - cam_trans
+  loss_weights:
+    contact_loss: 0
+    interpenetration_loss: 0
+    human_depth_loss: 0.6
+    reg_loss: 0
+    proj_loss: 5000
+
+opt_3:
+  n_iter: 100
+  optimizer: adam
+  train_params: ["scale", "cam_trans", "body_params.betas", "body_params.body_pose", "body_params.global_orient", "body_params.left_hand_pose", "body_params.right_hand_pose"]
+  loss_weights:
+    contact_loss: 0.7
+    interpenetration_loss: 0.3
+    human_depth_loss: 0.005
+    reg_loss: 45
+    proj_loss: 10000
