@@ -48,8 +48,6 @@ This will save the results in the `outputs/` directory.
  
 ## Roadmap
 
-We maintain a short list of upcoming items and the current release status for key pieces of the project:
-
 - [x] **Demo code release**
 - [ ] **Evaluation code**
 
