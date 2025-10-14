@@ -4,7 +4,7 @@
 
 <h5 align="center">
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2510.06219-b31b1b.svg?logo=arXiv)]() 
+[![arXiv](https://img.shields.io/badge/Arxiv-2510.11649-b31b1b.svg?logo=arXiv)](http://arxiv.org/abs/2510.11649) 
 [![Home Page](https://img.shields.io/badge/Project-Website-C27185.svg)](https://yuxuan-xue.com/physic/) 
 
 [Pradyumna Yalandur Muralidhar](https://pradyumanym.github.io/)<sup>★</sup>,
