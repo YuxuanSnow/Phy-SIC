@@ -23,7 +23,7 @@ TL;DR: Human-Scene Interaction and Contact from a Single Image with Physical Pla
 </div>
 <br>
 
-> **Follow-up: [GRAFT](https://github.com/pradyumnaym/graft)** learns a human-scene interaction prior that reaches contact quality similar to optimisation-based methods such as PhySIC at **~100× lower runtime** (about 0.2 s per image on an H100). Code, weights and evaluation are public.
+> **Follow-up: [GRAFT](https://github.com/pradyumnaym/graft) (ECCV 2026)** learns a human-scene interaction prior that reaches contact quality similar to optimisation-based methods such as PhySIC at **~100× lower runtime** (about 0.2 s per image on an H100). Code, weights and evaluation are public.
 
 https://github.com/user-attachments/assets/86105b9b-ff49-41de-8fd8-dbf25e3e0b26
 
@@ -51,7 +51,7 @@ This will save the results in the `outputs/` directory.
 To reproduce the PROX and RICH numbers from the paper, see [eval_release/](eval_release/README.md). It scores our released predictions against your own copies of the datasets and does not need the pipeline above.
 
 ## Follow-up: GRAFT
-[GRAFT](https://github.com/pradyumnaym/graft) ([arXiv](https://arxiv.org/abs/2604.19624)) is our follow-up: a learned HSI prior that predicts geometry-grounded refinements instead of optimising per image. It reaches similar contact quality at ~100× lower runtime, and as a plug-in prior it improves existing methods by up to 44% contact F1. It is evaluated on the same PROX and RICH benchmarks, and its RICH sample builder is the one used here.
+[GRAFT](https://github.com/pradyumnaym/graft) (ECCV 2026, [arXiv](https://arxiv.org/abs/2604.19624)) is our follow-up: a learned HSI prior that predicts geometry-grounded refinements instead of optimising per image. It reaches similar contact quality at ~100× lower runtime, and as a plug-in prior it improves existing methods by up to 44% contact F1. It is evaluated on the same PROX and RICH benchmarks, and its RICH sample builder is the one used here.
 
 ## Roadmap
 
