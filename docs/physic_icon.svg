@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 20 180 160" width="720" height="640">
+  <!-- scene: floor and a seat -->
+  <rect x="22" y="160" width="156" height="10" rx="5" fill="#9cc3d8"/>
+  <rect x="92" y="106" width="74" height="54" rx="7" fill="#2f6b8f"/>
+  <!-- person seated on the edge of the seat -->
+  <g stroke="#e3793f" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M116 68 L121 98"/>
+    <path d="M121 99 L95 99 L80 151 L66 152"/>
+    <path d="M118 77 L134 91 L146 99"/>
+  </g>
+  <circle cx="113" cy="48" r="15" fill="#e3793f"/>
+  <!-- contact: where body meets scene -->
+  <ellipse cx="108" cy="106.6" rx="15" ry="3.6" fill="#f5cf4f"/>
+  <ellipse cx="148" cy="106.6" rx="7" ry="3.2" fill="#f5cf4f"/>
+  <ellipse cx="69" cy="160.6" rx="10" ry="3.2" fill="#f5cf4f"/>
+</svg>

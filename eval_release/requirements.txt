@@ -1,0 +1,19 @@
+# Evaluation-only dependencies (Python 3.10). torch, numpy and open3d match the
+# pipeline's install.sh and requirements.txt; the other pins are the versions the
+# evaluation was tested with. The reconstruction pipeline is not needed. Install
+# torch for your CUDA first, e.g.
+#   pip install torch==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+numpy==1.26.4
+scipy
+trimesh==4.6.9
+open3d==0.18.0
+smplx==0.1.28
+scikit-learn==1.6.1
+tqdm
+huggingface_hub
+
+# RICH also needs smplfitter at the commit install.sh uses, installed without its
+# dependencies: it declares chumpy, which no longer builds and is never imported
+# for SMPL-X (see README):
+#   pip install --no-deps "smplfitter @ git+https://github.com/isarandi/smplfitter.git@13180c45a9201c8113690ad5158fad20b94be36b"
